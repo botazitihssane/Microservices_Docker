@@ -8,6 +8,18 @@ services:
       - "8761:8761"
     networks:
       - n3
+  # Gateway Service
+  gateway-service:
+    build:
+      context: ./Gateway
+    ports:
+      - "8888:8888"
+    depends_on:
+      - eureka-server
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+    networks:
+      - n3
 
   # MySQL Service for Client Database
   mysql-client:
