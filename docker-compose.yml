@@ -3,7 +3,7 @@ services:
   # Eureka server
   eureka-server:
     build:
-      context: ./Eureka_Server
+      context: ./Eureka-Server
     ports:
       - "8761:8761"
     networks:

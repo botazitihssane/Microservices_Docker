@@ -84,6 +84,9 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>
+			client-app
+		</finalName>
 	</build>
 
 </project>

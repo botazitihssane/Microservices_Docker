@@ -88,6 +88,9 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>
+			voiture-app
+		</finalName>
 	</build>
 
 </project>
